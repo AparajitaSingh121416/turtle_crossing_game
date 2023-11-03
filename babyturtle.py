@@ -14,3 +14,9 @@ class Babyturtle(Turtle):
     def go_backward(self):
         new_y = self.ycor() - 20
         self.goto(self.xcor(),new_y)
+    def go_right(self):
+        new_x = self.xcor() + 20
+        self.goto(new_x,self.ycor())
+    def go_left(self):
+        new_x = self.xcor() - 20
+        self.goto(new_x, self.ycor())
